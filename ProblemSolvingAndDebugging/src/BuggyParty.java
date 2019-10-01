@@ -31,9 +31,8 @@ public class BuggyParty {
 		return this.timeElapsed;
 	}
 	
-	// If the party is loud, add to timeElapsedSinceLoud. For each hour that passes,
-	// eliminate one guest. Once the the hours have reached half the capacity,
-	// everyone leaves.
+	// Causes an hour to pass in the party. Each hour, a guest leaves.
+	// Once half the capacity of hours have passed, everyone leaves.
 	public void timePasses() {
 		this.timeElapsed++;
 		this.guestNumber--;
